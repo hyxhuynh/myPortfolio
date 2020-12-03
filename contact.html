@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hy Huynh's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+
+<body>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Hy Huynh</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>   
+                <a href="contact.html">Contact</a>     
+            </nav>
+        </div>
+    </header>
+
+    <div id="main-container" class="container animated fadeInDown">
+        <section class="main-section">
+            <h1>
+                Contact
+            </h1>
+
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required="required"></textarea>
+                    </li>               
+                </ul>
+                <input class ="submit" type="submit" name="submit">
+            </form>
+
+        </section>
+
+        <section class="sidebar">
+            <div id="connect">
+                <h2>
+                    Connect with Me
+                </h2>
+                <img src="assets/images/github-icon-128.png" alt="Github" class="social" target="_blank" href="https://github.com/hyxhuynh">
+
+                <img src="assets/images/linkedIn-icon-128.png" alt="LinkedIn" class="social" target="_blank" href="https://www.linkedin.com/in/hyxhuynh/">
+
+                <img src="assets/images/stackoverflow-icon-128.png" alt="Stack Overflow" class="social" target="_blank" href="https://stackoverflow.com/users/10023923/hy-huynh?tab=profile">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; Copyright Hy Huynh
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

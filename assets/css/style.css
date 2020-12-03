@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/upfeathers.png");
+    font-size: 18px;
+    line-height: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    /* auto-center everything */
+    margin: 0 auto;
+    /* floating elements if need to, any container followed the previous one get a clear from it */
+    clear: both;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #794c74;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #794c74;
+    padding-bottom:20px;
+}
+
+h2, h3 {
+    font-size: 22px;
+}
+
+#masthead {
+    background: #b2deec;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #fff;
+    overflow: auto;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+    width: 100%;
+}
+
+#logo {
+    width: 250px;
+    height: 90px;
+    background: #794c74;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 90px;
+    color: #fadcaa;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav a {
+    color: #794c74;
+    text-decoration: none;
+    margin-left: 15px;
+    /* make blocks lay next to each other if there is enough room */
+    display: inline-block;
+    border-left: 1px solid #794c74; 
+    padding-left: 15px;
+    line-height: 18px;
+}
+
+/* first <a> link under the nav bar, which is the About, without border */
+nav a:first-child {
+    border-left: 0 none;
+}
+
+#main-container {
+    padding-top: 130px;
+}
+
+
+.main-section {
+    background: #fadcaa;
+    padding: 30px;
+    margin: 0 0 100px 0;
+    width: 100%;
+    max-width: 650px;
+    float: left;
+    border: 1px solid #ddd;
+}
+
+.bio-image {
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+/* sidebar */
+.sidebar {
+    background: #fadcaa;
+    padding: 30px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+h3, h2 {
+    border-bottom: 2px solid #794c74;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+
+
+.social {
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.social :last-child {
+    margin-right: 0;
+}
+
+footer {
+    background: #794c74;
+    color: #fff;
+    padding: 10px 0;
+    clear: both;
+    border-top: 8px solid #b2deec;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* portfolio */
+
+.gallery {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+.gallery:nth-child(even) {
+    margin-right: 40px; 
+}
+
+.gallery img {
+    width: 274px;
+    height: 180px;
+    /* border: 0 none; */
+    opacity: .8;
+    border: 1px solid #ddd;
+}
+
+.gallery h3 {
+    border-bottom: 0;
+    background: #c56183;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+/* contact */
+
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label, input[type=text], input[type=email], textarea {
+    display: block;
+    width: 100%
+}
+
+input[type=text], input[type=email], textarea {
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background: #c56183;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+/* Blockquote */
+blockquote{
+	padding: 20px 0;
+}
+
+blockquote p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	font-style: italic;
+	background: rgba(255,255,255,0.5);
+	display: inline;
+	color: #c56183;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+	line-height: 46px;
+	box-shadow: 0 -6px 0 rgba(235,150,108,0.2);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 980px) {
+    .container {
+        padding: 0 20px;
+        max-width: 768px;
+    }
+    #main-container {
+        padding-top: 130px;
+    }
+    .main-section {
+        max-width: 420px;
+    }
+    .bio-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-section, .sidebar {
+        max-width: 100%;
+    }
+
+    #main-container {
+        overflow: auto;
+    }
+
+    .sidebar {
+       margin-bottom: 40px; 
+    }
+
+    .gallery {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    .gallery:nth-child(even) {
+        margin-right: 0;
+    }
+
+    .gallery:nth-child(odd) {
+        float: right;
+    }
+
+    .bio-image {
+        width: 50%;
+    }
+
+    .sidebar{
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    header.container {
+        padding: 0;
+    }
+
+    #main-container {
+        padding-top: 0;
+    }
+
+    #logo, .gallery, .gallery img, .bio-image {
+        width: 100%;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    nav a {
+        width: 30%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .sidebar{
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+
+
+
+
